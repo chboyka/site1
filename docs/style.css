@@ -40,22 +40,39 @@ li a:hover{
 }
 
 .logo{
-    margin: 50px 50px;
+    margin: 3rem;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
 }
+.logo > *{
+    /* width: 600px;  */
+    flex: 1 1 200px;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+
 .logo img{
     width:300px; 
     height:300px;
+    position: absolute;
+    right: 5rem;
+    display: block;
 }
 
 .intro{
-    width: 900px;
+    /* width: 900px; */
     /* border:1px solid black; */
-    padding: 30px 50px;
+    padding: 2ch 5ch;
     border: 5px dashed rgb(255, 154, 233);
     border-radius: 20px;
 }
+p{
+    line-height: 1.3rem;
+    max-width: 60ch;
+}
+
 .home-img img{
     width: 100%;
     height: fit-content;
@@ -93,15 +110,18 @@ li a:hover{
 
 .container{
     /* border: 1px solid black; */
-    height: 720px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
+    margin: 2ch;
 }
 
 .flex-box{
-    width: 30%;
-    margin: 10px;
+    flex: 1 1 400px;
+    /* width: 30%;
+    margin: 10px; */
     /* border: 1px solid black; */
     cursor: pointer;
 }
@@ -159,17 +179,57 @@ li a:hover{
  .about-logo{
      transform: translateX(15px);
  }
-
+footer{
+    height: 400px;
+}
  .footer{
-     height: 500px;
-     /* border: 1px solid black; */
+     position: relative;
+     display: flex;
+     height: 400px;
+     border: 1px solid black;
      background: url("./static/img/footer.png");
      background-size: cover;
      background-repeat: no-repeat;
+     background-blend-mode:screen;
  }
  .contact{
     background-color: rgba(167, 14, 65, 0.822);
  }
+
+.social-media,.social-media-icons{
+    margin-top: 5ch;
+    margin-left: 10ch;
+    list-style: none;
+    font-size:1.5rem;
+}
+.social-media li{
+    margin-bottom: 1ch;
+}
+.social-media-icons li img{
+    width: 2.5ch;
+    
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    right: 5ch;
+    top: 2ch;
+    position: absolute;
+    flex-wrap: wrap;
+    height: 200px;
+}
+.icons a{
+    font-size: 3.5ch;
+    padding-left: 8ch;
+    margin-top: 1ch;
+    text-decoration: none;
+
+}
+
+.icons img{
+    width: 6ch;
+}
+
 .form{
     display: flex;
     height: 500px;
@@ -207,6 +267,7 @@ legend{
     border:none
 }
 textarea{
+    font-family: Roboto;
     resize: none;
     overflow-y: scroll;
     scroll-behavior: auto;
