@@ -72,10 +72,34 @@ p{
     margin: 1ch;
 }
 
-.home-img img{
-    width: 100%;
-    height: fit-content;
+.home-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:linear-gradient(to bottom right,#7533e1,#b000a1);
+}
 
+.slysc img{
+    width: 14ch;
+    margin-left: 4ch;
+}
+
+.slysc p{
+    line-height: 3ch;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    transition: 2s;
+}
+
+.home-img{
+    height: 750px;
+    display: flex;
+    align-items: center;    
+}
+
+.home-img img{
+    height: 400px;
 }
 
 .news{

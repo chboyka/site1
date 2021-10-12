@@ -5,7 +5,10 @@
         li a[href="./home.html"]{
             background-color: rgb(33, 147, 212);
         }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
     </style>
+    
     <script src="./static/js/login.js"></script>
     <link rel="stylesheet" href="./static/css/style.css">
     <meta charset="UTF-8">
@@ -24,11 +27,18 @@
         <li><a href="./contact.html">Contact Us</a></li>
         <li><a href="./index.html" onclick="document.cookie='login=False'">Log out</a></li>
     </ul>
-    <div class="home-img">
-        <img src="./static/img/home.png" alt="Home">
+    <div class="home-container">
+        <div class="slysc">
+            <img src="./static/img/logo.png" alt="">
+            <p>Welcome to,<br>Sri Lanka Youth School of Computing.</p>
+        </div>
+        <div class="home-img">
+            <img src="./static/img/home-bg.png" alt="Home">
+        </div>
     </div>
 
     <!-- Intro  -->
+    <!-- <div class="news"><h1 style="text-align: center;font-family: roboto;">Intro</h1></div> -->
     <div class="logo" ">
         <div class="intro">
             <h1>Sri Lanka Youth</h1>
@@ -43,7 +53,7 @@
 
 
     <!-- News section -->
-    <div class="news"><h1 style="text-align: center;font-family: roboto;">News</h1></div>
+    <div class="news" style="background:linear-gradient(to bottom right,#7533e1,#b000a1);"><h1 style="text-align: center;font-family: roboto;color: white;">News</h1></div>
     <div class="news-content">
         <div class="container">
             
@@ -88,7 +98,7 @@
     <br>
 
     <!-- About section  -->
-    <div class="about">
+    <div class="about" style="background:linear-gradient(to bottom right,#7533e1,#b000a1);">
         <h1 style="color: aliceblue;text-align: center;font-family: roboto;">About</h1>
     </div>
     <div class="about-container">
