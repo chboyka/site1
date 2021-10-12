@@ -154,7 +154,7 @@ button{
     width: 12rem;
     font-size: 1.4rem;
     padding: 1.5ch 2ch;
-    background-color:  #b000a1;
+    background:linear-gradient(to bottom right,#7533e1,#b000a1);
     cursor: pointer;
     border: none;
     border-radius: 50px;
