@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --border:1px solid black;
+}
+
+main{
+    min-height: 100vh;
+    background: #6BDCE7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    background: white;
+    width: 60%;
+    min-height: 85vh;
+    background:linear-gradient(to top right,rgba(255,255,255,0.6),rgba(255,255,255,0.3));
+    /* border:var(--border); */
+    border-radius: 6vh;
+    z-index: 3;
+    backdrop-filter: blur(1.2rem);
+    display: flex;
+}
+
+.user{
+    /* border: var(--border); */
+    flex: 1;
+    border-radius: 6vh;
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    display: flex;
+    flex-direction: column;
+}
+
+.user *{
+    border: var(--border);
+}
+
+.games{
+    flex: 2;
+    /* border: var(--border); */
+}
+
+.profile{
+    flex: 1.5;
+    border-radius: 6vh 6vh 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile img{
+    width: 10vh;
+}
+
+.links{
+    flex: 3;
+}
+
+.pro{
+    flex: 1.5;
+    border-radius: 0 0 6vh 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pro-console{
+    height: 60%;
+    width: 70%;
+    border-radius: 6vh;
+    display: flex;
+}
+
+.circle1,.circle2{
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    background: red;
+    background: linear-gradient(to top right,rgba(255, 255, 255, 0.9),rgba(255,255,255,0.3));
+    /* border: var(--border); */
+    border-radius: 50%;
+}
+
+.circle1{
+    top: 3%;
+    right: 15%;
+}
+
+
+.circle2{
+    bottom: 2%;
+    left: 10%;
+}
+
