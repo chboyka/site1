@@ -5,12 +5,13 @@
 }
 
 :root{
-    --border:1px solid black;
+    --border: 0px solid black;
 }
+
 
 main{
     min-height: 100vh;
-    background: #6BDCE7;
+    background: #5c5c5c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +22,7 @@ main{
     width: 60%;
     min-height: 85vh;
     background:linear-gradient(to top right,rgba(255,255,255,0.6),rgba(255,255,255,0.3));
-    /* border:var(--border); */
+    border:var(--border);
     border-radius: 6vh;
     z-index: 3;
     backdrop-filter: blur(1.2rem);
@@ -29,7 +30,7 @@ main{
 }
 
 .user{
-    /* border: var(--border); */
+    border: var(--border);
     flex: 1;
     border-radius: 6vh;
     background: linear-gradient(to bottom right, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
